@@ -5,6 +5,7 @@ var cssnano = require('gulp-cssnano');
 var prefix = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
+var del = require('del');
 var uglify = require('gulp-uglify');
 var cp = require('child_process');
 
@@ -96,6 +97,11 @@ function jekyll(done) {
     .on('close', done);
 }
 
+function delIndex(done){
+  del(["_site/index.html"]);
+  done();
+}
+
 /**
  * Watch source files for changes & recompile
  * Watch html/md files, run Jekyll & reload BrowserSync
@@ -103,7 +109,7 @@ function jekyll(done) {
 function watchData() {
   gulp.watch(
     [ '_data/*.yml', '_config.yml', 'assets/*.json' ],
-    gulp.series(jekyll, browserSyncReload)
+    gulp.series(delIndex, jekyll, browserSyncReload)
   );
 }
 
