@@ -13,17 +13,18 @@
 #     - tag: AngularJS
 #     - tag: Node
 
-- name: project X
-  descr: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"
-  demo: https://example.com/
+- name: Migration to Continuous Deployment
+  descr: "This project was a company wide initiative to adopt Continuous Deployment (CD) across all our products. It involved migrating all our apps to use Docker, AWS ECS, terraform,  Buildkite CI, Knapsack, Feature Flags, the 12 Factor App methodology, and DevOps practises.
+  I started by migrating one of our smaller apps to use a infrastructure that could handler more frequent deploys, and teach this small team how to follow CD practises. Once the company saw the benefits of migrating all our apps to use CD, I was able to assemble a team we called the Dev Accelerator to migrate the rest of the apps and support the teams in this process change. With this project, the team was able to reduced deployment frequency from 1.58/week to 5/day, reduced the lead time for changes from 3 weeks to 25 minutes, reduced the time to restore service from 14.7 hours to 1 hour, reduce change failure rate from 68.4% to 2.91%. I received the Nulogy Stars Award. the most important company award, after the completion of this project."
+  demo:
   tags:
-    - tag: MongoDB
-    - tag: Express
-    - tag: AngularJS
-    - tag: Node
+    - tag: AWS ECS
+    - tag: Terraform
+    - tag: Buildkite CI
+    - tag: DevOps
 
-- name: project Y
-  descr: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"
+- name: Migration to AWS ECS & Terraform
+  descr: "This project was a company wide initiative to migrate all our infrastructure to AWS ECS and Terraform. It involved migration all our apps to use Docker, AWS ECS, Terraform and the 12 Factor App methodology. I started by migrating one of our smaller apps to use a more reliable infrastructure with immutable app containers. "
   demo: https://example.com/
   tags:
     - tag: Python
