@@ -22,8 +22,9 @@
   date: Nov 2018 - Present
   subtitle: Software Architect
   tags:
+    - tag: DDD
     - tag: AWS
-    - tag: Docker
+    - tag: DevOps
     - tag: React
     - tag: Rails
   timeline-side: right
@@ -35,15 +36,17 @@
   tags:
     - tag: Rails
     - tag: PostgreSQL
+    - tag: TDD
+    - tag: Extreme Programming
   timeline-side: left
 
 - title: SuXessPoint Inc.
   date: Jul 2010 - Jan 2011
   subtitle: .NET Programmer
   tags:
-    - tag: React
-    - tag: Node
-    - tag: Javascript
+    - tag: C#
+    - tag: .NET
+    - tag: MySQL
   timeline-side: right
 
 - title: University of Waterloo
@@ -55,4 +58,7 @@
 - title: TRISTAR Caribbean Inc.
   date: 2006 - 2007
   subtitle: Database Developer
+  tags:
+    - tag: Visual Basic
+    - tag: Microsoft Access
   timeline-side: right
