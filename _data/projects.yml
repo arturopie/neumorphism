@@ -13,22 +13,28 @@
 #     - tag: AngularJS
 #     - tag: Node
 
-- name: Migration to Continuous Deployment
-  descr: "This project was a company wide initiative to adopt Continuous Deployment (CD) across all our products. It involved migrating all our apps to use Docker, AWS ECS, terraform,  Buildkite CI, Knapsack, Feature Flags, the 12 Factor App methodology, and DevOps practises.
-  I started by migrating one of our smaller apps to use a infrastructure that could handler more frequent deploys, and teach this small team how to follow CD practises. Once the company saw the benefits of migrating all our apps to use CD, I was able to assemble a team we called the Dev Accelerator to migrate the rest of the apps and support the teams in this process change. With this project, the team was able to reduced deployment frequency from 1.58/week to 5/day, reduced the lead time for changes from 3 weeks to 25 minutes, reduced the time to restore service from 14.7 hours to 1 hour, reduce change failure rate from 68.4% to 2.91%. I received the Nulogy Stars Award. the most important company award, after the completion of this project."
+- name: Migration to AWS ECS & Terraform
+  descr: "I lead the migration to Docker, AWS ECS, Terraform, and the 12 Factor App methodology on all applications at Nulogy. I started by migrating one of our apps. The previous infrastructure was using mutable EC2 instances, and it was unreliable. Deploys would often bring the app down, and most of the infrastructure was manually provisioned. By the end of the migration, all our infrastructure was provisioned via Terraform and Docker. The success from this project allowed the creation of a new team (the Dev Accelerator team) to migrate the rest of the apps. Once all apps were migrated, we reduced our infrastructure bill by 50%, increased service availability, and deploys reliability. It also supported the move to Continuous Delivery."
   demo:
   tags:
     - tag: AWS ECS
-    - tag: Terraform
+    - tag: Docker
+    - tag: Infrastructure as Code
+    - tag: The 12 Factor App
+
+- name: Migration to Continuous Delivery
+  descr: "This project was a company wide initiative to adopt Continuous Delivery (CD) across all our products. It involved adopting new tools and introducing process changes and techniques across all the teams. I used Docker, Buildkite CI and Knapsack to create a CI/CD pipeline for running all our automated tests, linters, security checks, docker builds and deploys. I reduced the cycle time for running all our automated tests from more than 2 hours to less than 10 minutes. I improved our deploy pipeline to increase safety and capacity for more frequent deploys. I also trained the developers on how to write zero-downtime DB migrations, and showed them the benefits of increasing deploy frequency. After project completion, the team was able to reduce deployment frequency from 1.58/week to 5/day, reduce the lead time for changes from 3 weeks to 25 minutes, reduce the time to restore service from 14.7 hours to 1 hour, and reduce change failure rate from 68.4% to 2.91%. I received the Nulogy Stars Award, the most important company award, after the completion of this project."
+  demo:
+  tags:
     - tag: Buildkite CI
+    - tag: Terraform
+    - tag: Docker
     - tag: DevOps
 
-- name: Migration to AWS ECS & Terraform
-  descr: "This project was a company wide initiative to migrate all our infrastructure to AWS ECS and Terraform. It involved migration all our apps to use Docker, AWS ECS, Terraform and the 12 Factor App methodology. I started by migrating one of our smaller apps to use a more reliable infrastructure with immutable app containers. "
-  demo: https://example.com/
+- name: Flaky Tracker
+  descr: "This is a Hackday project I built to find the most expensive flaky (non transient) tests in a test suite. It is fully serverless and deploys on AWS using the Serverless framework. It extracts build artifacts and outputs from Buildkite jobs, analyze them to find flaky specs and save them in S3. It uses Quicksight as a BI to visualize the data."
   tags:
-    - tag: Python
-    - tag: Django
-
-- name: project Z
-  descr: "You can also set a project without demo link and no tags"
+    - tag: TypeScript
+    - tag: Serverless Framework
+    - tag: AWS
+    - tag: AWS Amplify
